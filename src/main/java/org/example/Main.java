@@ -1,8 +1,6 @@
 package org.example;
 
-import org.example.parsing.HTMLParsing;
-
-import java.io.IOException;
+import org.example.data.NikeSnkrsData;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,15 +16,15 @@ public class Main {
 //
 //        HTMLParsing.getSneakerFreakerData(Html);
 
-        String url = "https://www.nike.com/launch?s=upcoming";
-        String Html = null;
-
-        try {
-            Html = HTMLRequests.requestSneakerPage(url);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        System.out.println(HTMLParsing.parseSnrksUpcommingPage(Html));
+//        String url = "https://www.nike.com/launch?s=upcoming";
+//        String Html = null;
+//
+//        try {
+//            Html = HTMLRequests.requestSneakerPage(url);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+        System.out.println(NikeSnkrsData.getNikeSnkrsData());
     }
 }

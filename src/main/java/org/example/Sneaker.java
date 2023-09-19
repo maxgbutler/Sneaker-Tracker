@@ -10,7 +10,7 @@ public class Sneaker {
 
     private String releaseDate;
 
-    private Integer price;
+    private String price;
 
     private String colorway;
 
@@ -18,7 +18,7 @@ public class Sneaker {
 
     public Sneaker() {}
 
-    public Sneaker(String name, String releaseDate, Integer price, String colorway, String styleCode, String description) {
+    public Sneaker(String name, String releaseDate, String price, String colorway, String styleCode, String description) {
         this.name = name;
         this.description = description;
         this.releaseDate = releaseDate;
@@ -51,11 +51,11 @@ public class Sneaker {
         this.releaseDate = releaseDate;
     }
 
-    public Integer getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -77,13 +77,13 @@ public class Sneaker {
 
     @Override
     public String toString() {
-        return "{" +
+        return '\n' + "{" +
                 "name= " + name + '\n' +
                 "description= " + description + '\n' +
                 "releaseDate= " + releaseDate + '\n' +
-                "price= " + price +
+                "price= " + price + '\n' +
                 "colorway= " + colorway + '\n' +
-                "styleCode= " + styleCode + '\n' +
-                '}';
+                "styleCode= " + styleCode +
+                '}' + '\n';
     }
 }
