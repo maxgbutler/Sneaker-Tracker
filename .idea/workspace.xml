@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b11ae7e-1940-4f60-9668-aa5498611cdf" name="Changes" comment="created method to parse html from sneaker freakers upcoming page and create Sneaker objects with data about each upcoming sneaker.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/NikeSnkrsData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/SneakerFreakerData.java" afterDir="false" />
+    <list default="true" id="2b11ae7e-1940-4f60-9668-aa5498611cdf" name="Changes" comment="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/NiceKicksData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HTMLRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HTTPRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Sneaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parsing/Formatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parsing/HTMLParsing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/NikeSnkrsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/NikeSnkrsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/SneakerFreakerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/SneakerFreakerData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/maxgd/IdeaProjects/lcprojectsc/Projects/lcfinal/Food-Magnet2.0",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maxgd/IdeaProjects/lcprojectsc/Projects/lcfinal/Food-Magnet2.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,12 +76,38 @@
       <option name="project" value="LOCAL" />
       <updated>1695082953620</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactored code so each class in the data package contains the parsing methods for that specific website. Updated UserAgent class with method to choose a random user agent.">
+      <created>1695154539428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695154539428</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field.">
+      <created>1695154618895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695154618895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created basic method that would return the html for a webpage as a String." />
     <MESSAGE value="created method to parse html from sneaker freakers upcoming page and create Sneaker objects with data about each upcoming sneaker." />
-    <option name="LAST_COMMIT_MESSAGE" value="created method to parse html from sneaker freakers upcoming page and create Sneaker objects with data about each upcoming sneaker." />
+    <MESSAGE value="refactored code so each class in the data package contains the parsing methods for that specific website. Updated UserAgent class with method to choose a random user agent." />
+    <MESSAGE value="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field." />
+    <option name="LAST_COMMIT_MESSAGE" value="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

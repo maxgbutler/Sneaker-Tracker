@@ -14,17 +14,39 @@ public class Sneaker {
 
     private String colorway;
 
+    private String sneakerUrl;
+
+    private String photoUrl;
+
     private String styleCode;
 
     public Sneaker() {}
 
-    public Sneaker(String name, String releaseDate, String price, String colorway, String styleCode, String description) {
+    public Sneaker(String name, String description, String releaseDate, String price, String colorway, String sneakerUrl, String photoUrl, String styleCode) {
         this.name = name;
         this.description = description;
         this.releaseDate = releaseDate;
         this.price = price;
         this.colorway = colorway;
+        this.sneakerUrl = sneakerUrl;
+        this.photoUrl = photoUrl;
         this.styleCode = styleCode;
+    }
+
+    public String getSneakerUrl() {
+        return sneakerUrl;
+    }
+
+    public void setSneakerUrl(String sneakerUrl) {
+        this.sneakerUrl = sneakerUrl;
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 
     public String getName() {
@@ -83,6 +105,8 @@ public class Sneaker {
                 "releaseDate= " + releaseDate + '\n' +
                 "price= " + price + '\n' +
                 "colorway= " + colorway + '\n' +
+                "sneakerUrl= " + sneakerUrl + '\n' +
+                "photoUrl= " + photoUrl + '\n' +
                 "styleCode= " + styleCode +
                 '}' + '\n';
     }

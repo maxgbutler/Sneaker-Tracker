@@ -50,6 +50,7 @@ public class NikeSnkrsData {
 
                 nikeSnkr.setDescription(description.substring(0, description.length() - 10));
                 nikeSnkr.setStyleCode(description.substring(description.length() - 10, description.length()));
+                nikeSnkr.setSneakerUrl(sneakerLink);
 
                 nikeSnkrs.add(nikeSnkr);
             }
@@ -72,6 +73,7 @@ public class NikeSnkrsData {
         Document doc = Jsoup.parse(sneakerHtml);
         Elements productInfos = doc.getElementsByClass("product-info ncss-col-sm-12 full");
 
+        int n = 0;
         for (Element productInfo : productInfos) {
             Sneaker nikeSnkr = new Sneaker();
 
@@ -84,6 +86,7 @@ public class NikeSnkrsData {
 
             nikeSnkr.setDescription(description.substring(0, description.length() - 10));
             nikeSnkr.setStyleCode(description.substring(description.length() - 10, description.length()));
+            nikeSnkr.setSneakerUrl(sneakerLinks.get(n)); n++;
 
             nikeSnkrs.add(nikeSnkr);
         }

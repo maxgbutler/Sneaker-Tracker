@@ -38,6 +38,8 @@ public class SneakerFreakerData {
             sneaker.setReleaseDate(sneakerInfo.child(1).child(0).ownText());
             sneaker.setColorway(sneakerInfo.child(2).getElementsContainingOwnText("Colourway").text());
             sneaker.setStyleCode(sneakerInfo.child(2).getElementsContainingOwnText("Style Code").text());
+            sneaker.setSneakerUrl("https://www.sneakerfreaker.com" + element.attr("href"));
+
 
             sneakerData.add(sneaker);
         }
