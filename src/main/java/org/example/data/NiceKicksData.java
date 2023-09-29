@@ -30,7 +30,6 @@ public class NiceKicksData {
         //Elements sneakerElements = doc.getElementsByClass("site-main").get(0).children();
 
         ArrayList<Sneaker> sneakerList = new ArrayList<>();
-        //List<String> compareTo = Arrays.asList("p", "ul", "div", "nav");
 
         for (Element sneakerElement : sneakerElements) {
 
@@ -42,7 +41,6 @@ public class NiceKicksData {
 
             sneaker.setName(sneakerInfoA.text());
             sneaker.setSneakerUrl(sneakerInfoA.attr("href"));
-            System.out.println(sneakerInfoB.text());
 
             List<String> sneakerInfoList = getInfoValues(sneakerInfoB.text());
             sneaker.setColorway(sneakerInfoList.get(0));
@@ -51,8 +49,7 @@ public class NiceKicksData {
             sneaker.setPrice(sneakerInfoList.get(3));
             sneaker.setPhotoUrl(sneakerElement.child(0).child(0).child(0).attr("data-lazy-srcset"));
 
-            System.out.println(sneaker);
-            
+            sneakerList.add(sneaker);
         }
 
         return sneakerList;

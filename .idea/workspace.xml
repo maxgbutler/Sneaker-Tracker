@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b11ae7e-1940-4f60-9668-aa5498611cdf" name="Changes" comment="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/NiceKicksData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2b11ae7e-1940-4f60-9668-aa5498611cdf" name="Changes" comment="Created and debugged methods for requesting and parsing NiceKicks upcoming page, updated NikeSnkrsData and SneakerFreakerData to add sneakerUrl to each sneaker object.">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Sneaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/NikeSnkrsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/NikeSnkrsData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/SneakerFreakerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/SneakerFreakerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/NiceKicksData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/NiceKicksData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695154618895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created and debugged methods for requesting and parsing NiceKicks upcoming page, updated NikeSnkrsData and SneakerFreakerData to add sneakerUrl to each sneaker object.">
+      <created>1695948414436</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695948414436</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,7 +101,8 @@
     <MESSAGE value="created method to parse html from sneaker freakers upcoming page and create Sneaker objects with data about each upcoming sneaker." />
     <MESSAGE value="refactored code so each class in the data package contains the parsing methods for that specific website. Updated UserAgent class with method to choose a random user agent." />
     <MESSAGE value="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field." />
-    <option name="LAST_COMMIT_MESSAGE" value="created getNikeSnkrsData method to go through and parse each sneaker on nike's upcoming sneakers page into pojos. Updates the sneaker object with a description field." />
+    <MESSAGE value="Created and debugged methods for requesting and parsing NiceKicks upcoming page, updated NikeSnkrsData and SneakerFreakerData to add sneakerUrl to each sneaker object." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created and debugged methods for requesting and parsing NiceKicks upcoming page, updated NikeSnkrsData and SneakerFreakerData to add sneakerUrl to each sneaker object." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
